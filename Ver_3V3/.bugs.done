@@ -1,0 +1,5 @@
+Add bug list | id:3eb71d8460492cc9301e3ffc0c7b28b8a60335a6
+Add pullup resistors on SDA SCL | id:47cc1e74d4507deee6ea7375726cab400fc29120
+TODO Check connections for INT/32KHz/RST - need to be pulled up or down | id:660b5a73650bcf5b8f5792e9fe2e6926f616d268
+Polarity reversal protection diode | id:b234990043bd1489cd2408f6fc27efc75354bf38
+Need to check if I2C logic levels ok between 5V device and 3V3 MC | id:dfdbf42277eb3b3b3a6236db66790fb57253146b

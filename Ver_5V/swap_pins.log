@@ -1,0 +1,20 @@
+02-25 21:23:51 swap_pins.action_swap_pins 70:Action plugin Swap pins started
+02-25 21:23:55 swap_pins.action_swap_pins 97:Action plugin canceled. More or less than 2 pads selected.
+02-25 21:24:26 swap_pins.action_swap_pins 70:Action plugin Swap pins started
+02-25 21:24:26 swap_pins.swap_pins 43:Starting swap_pins
+02-25 21:24:26 swap_pins.swap_pins 50:main sch file is: /Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch
+02-25 21:24:26 swap_pins.swap_pins 51:main pcb file is: /Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.kicad_pcb
+02-25 21:24:26 swap_pins.swap_pins 52:sch cache file is: /Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger-cache.lib
+02-25 21:24:26 swap_pins.swap_pins 66:Swaping pins: 1, 1on: SW1 on nets: RESET, RESET
+02-25 21:24:27 swap_pins.swap_pins 431:found subsheet:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/Thermocouple_PSU.sch
+ in:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch, line: 20
+02-25 21:24:27 swap_pins.swap_pins 431:found subsheet:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/Thermocouple_connectors.sch
+ in:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch, line: 26
+02-25 21:24:27 swap_pins.swap_pins 431:found subsheet:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/Display
+ in:
+	/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch, line: 33

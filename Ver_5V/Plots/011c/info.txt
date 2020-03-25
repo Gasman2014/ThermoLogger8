@@ -1,0 +1,4 @@
+uuid:         011c27aa1c76feabf7278f71abef9c959f46e682 2018-12-18 12:02:45 UTC
+parent:       52bd0d96c514364f6365ff9b00088230d3ec4453 2018-12-17 20:01:36 UTC
+tags:         Ver_5V
+comment:      Updated entire board with Kicad V5.0.2 stock footprints (apart from custom SD Card) (user: johnpateman)

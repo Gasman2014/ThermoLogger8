@@ -1,0 +1,33 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.0-dev-4122-gf60c251)*%
+%TF.CreationDate,2018-06-11T17:10:56+01:00*%
+%TF.ProjectId,ThermocoupleLogger,546865726D6F636F75706C654C6F6767,ca9ed02408*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B_Size_X,89.000*%
+%TJ.B_Size_Y,76.935*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Overall_Thickness,1.600*%
+%TJ.B_Legend_Present,Both*%
+%TJ.B_SolderMask_Present,Both*%
+G04 board design rules*
+%TJ.D_PadToPad_Out,0.200*%
+%TJ.D_PadToTrack_Out,0.200*%
+%TJ.D_TrackToTrack_Out,0.200*%
+%TJ.D_MinLineWidth_Out,0.250*%
+%TJ.D_TrackToRegion_Out,0.508*%
+%TJ.D_RegionToRegion_Out,0.508*%
+G04 Layer Structure*
+%TJ.L_"Copper,L1,Top",Positive,ThermocoupleLogger-F.Cu.gtl*%
+%TJ.L_"Copper,L2,Bot",Positive,ThermocoupleLogger-B.Cu.gbl*%
+%TJ.L_"SolderPaste,Top",Positive,ThermocoupleLogger-F.Paste.gtp*%
+%TJ.L_"SolderPaste,Bot",Positive,ThermocoupleLogger-B.Paste.gbp*%
+%TJ.L_"Legend,Top",Positive,ThermocoupleLogger-F.SilkS.gto*%
+%TJ.L_"Legend,Bot",Positive,ThermocoupleLogger-B.SilkS.gbo*%
+%TJ.L_"SolderMask,Top",Negative,ThermocoupleLogger-F.Mask.gts*%
+%TJ.L_"SolderMask,Bot",Negative,ThermocoupleLogger-B.Mask.gbs*%
+%TJ.L_"Profile",Positive,ThermocoupleLogger-Edge.Cuts.gm1*%
+M02*

@@ -1,0 +1,2021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch</source>
+    <date>Thursday, 29 November 2018 at 19:38:18</date>
+    <tool>Eeschema (5.0.1-3-g963ef8bb5)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>8-Channel Thermocouple Datalogger</title>
+        <company>JP Enterprises</company>
+        <rev>1.1</rev>
+        <date>2017-02-11</date>
+        <source>ThermocoupleLogger.sch</source>
+        <comment number="1" value="Based on an original AD595 design"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Thermocouple_PSU/" tstamps="/583C9FB7/">
+      <title_block>
+        <title>8-Channel Thermocouple Datalogger</title>
+        <company>JP Enterprises</company>
+        <rev>1.1</rev>
+        <date>2017-02-11</date>
+        <source>Thermocouple_PSU.sch</source>
+        <comment number="1" value="Based on an original AD595 design"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Thermocouple connectors/" tstamps="/589CE548/">
+      <title_block>
+        <title>8-Channel Thermocouple Datalogger</title>
+        <company>JP Enterprises</company>
+        <rev>1.1</rev>
+        <date>2017-02-11</date>
+        <source>Thermocouple_connectors.sch</source>
+        <comment number="1" value="Based on an original AD595 design"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Display &amp; SD Card/" tstamps="/589D5546/">
+      <title_block>
+        <title>8-Channel Thermocouple Datalogger</title>
+        <company>JP Enterprises</company>
+        <rev>1.1</rev>
+        <date>2017-02-11</date>
+        <source>Display &amp; SD_Card.sch</source>
+        <comment number="1" value="Based on an original AD595 design"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Micro_Clock/" tstamps="/589D87C6/">
+      <title_block>
+        <title>8-Channel Thermocouple Datalogger</title>
+        <company>JP Enterprises</company>
+        <rev>1.1</rev>
+        <date>2017-02-11</date>
+        <source>Micro_Clock.sch</source>
+        <comment number="1" value="Based on an original AD595 design"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C4">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">EEEFK1C100R</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>589F9200</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>470nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>5915D301</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Barrel_Jack</value>
+      <footprint>Connectors:BARREL_JACK</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MJ-179PH</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="Barrel_Jack-RESCUE-ThermocoupleLogger" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>5930D1C5</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>9V</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="Battery-device" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>5930D2E0</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BS250</value>
+      <footprint>TO_SOT_Packages_SMD:TSOT-23</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BS250FTA</field>
+        <field name="Placement">+V2 -V1</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="BS250-RESCUE-ThermocoupleLogger" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594BC4B0</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N4007</value>
+      <footprint>Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">1N4007</field>
+        <field name="Placement">+V1 -V2</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="1N4007-diode" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594BF20E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">+V2 -V1</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R-device" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594BF93F</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>9V</value>
+      <footprint>Diodes_SMD:D_SOD-323</footprint>
+      <datasheet>-</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BAT60JFILM</field>
+        <field name="Placement">+V2 -V1</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="D_Schottky_Small-device" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594BFB6D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594D1F83</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>7805</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Vertical</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">LM7805</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="7805-jp_components" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>594D2B25</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM3940</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/Regulators/lm3940.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">LM3940IMP-3.3</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="LM3940-jp_components" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>59525E1F</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>47uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_5x5.3</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">EEEFK1C470UR</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="CP_Small-device" description=""/>
+      <sheetpath names="/Thermocouple_PSU/" tstamps="/583C9FB7/"/>
+      <tstamp>59526106</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECB5</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECBF</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECC9</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECD3</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECDD</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECE7</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECF1</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>TC_Connector</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B2B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589CECFB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D5633</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D5A27</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D5A90</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D5AFD</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D5B98</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>ADG407</value>
+      <footprint>Housings_DIP:DIP-28_W15.24mm</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">PDIP-28_Wide</field>
+        <field name="Part#">ADG407</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="ADG407-jp_components" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D71A8</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589D9FEC</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589DA065</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">X7R</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>589DA428</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>59318E46</tstamp>
+    </comp>
+    <comp ref="L9">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1429</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1477</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D14C5</tstamp>
+    </comp>
+    <comp ref="L4">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1517</tstamp>
+    </comp>
+    <comp ref="L5">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D156A</tstamp>
+    </comp>
+    <comp ref="L6">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1615</tstamp>
+    </comp>
+    <comp ref="L7">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1669</tstamp>
+    </comp>
+    <comp ref="L8">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D16C4</tstamp>
+    </comp>
+    <comp ref="L10">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1721</tstamp>
+    </comp>
+    <comp ref="L11">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D177B</tstamp>
+    </comp>
+    <comp ref="L12">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D17DD</tstamp>
+    </comp>
+    <comp ref="L13">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D183D</tstamp>
+    </comp>
+    <comp ref="L14">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D18A4</tstamp>
+    </comp>
+    <comp ref="L15">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D190A</tstamp>
+    </comp>
+    <comp ref="L16">
+      <value>150</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">MPZ2012S101A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Thermocouple connectors/" tstamps="/589CE548/"/>
+      <tstamp>594D1971</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>I2C_20x4_DISPLAY</value>
+      <footprint>Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B6B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="I2C_20x4_DISPLAY-jp_components" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>589D6D78</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R_Small-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>589EBC96</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BD139</value>
+      <footprint>TO_SOT_Packages_THT:TO-126_Vertical</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BD139</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="BD139-RESCUE-ThermocoupleLogger" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>589EBCEC</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BZT52C3V3-7-F</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="D_Zener_Small_ALT-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59314274</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BZT52C3V3-7-F</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="D_Zener_Small_ALT-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>593144F7</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">BZT52C3V3-7-F</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="D_Zener_Small_ALT-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59314520</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R_Small-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59314AC7</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R_Small-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59314B9F</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R_Small-device" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59314C06</tstamp>
+    </comp>
+    <comp ref="XS1">
+      <value>SD_ebay-uSD-push/push_SMD</value>
+      <footprint>jp_personal:Conn_uSDcard</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/SD_Card/5429_b1.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">SD_Card[uSD]</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="SD_ebay-uSD-push_push_SMD-RESCUE-ThermocoupleLogger-ThermocoupleLogger-rescue" description=""/>
+      <sheetpath names="/Display &amp; SD Card/" tstamps="/589D5546/"/>
+      <tstamp>59544647</tstamp>
+    </comp>
+    <comp ref="Y2">
+      <value>32.768kHz</value>
+      <footprint>Crystals:Crystal_Round_d3.0mm_Vertical</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">AB26T-32.768KHZ</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="Crystal-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589D897F</tstamp>
+    </comp>
+    <comp ref="BT2">
+      <value>Battery</value>
+      <footprint>Battery_Holders:Keystone_103_1x20mm-CoinCell</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">KEYSTONE 103</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="Battery_Cell-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589D8986</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589D89B6</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>5.1K</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589D89CE</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>5.1K</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="R-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589D89D8</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_02X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">75869-131LF</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589E4CA3</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>AD595</value>
+      <footprint>Housings_DIP:DIP-14_W7.62mm</footprint>
+      <datasheet>file:///Users/johnpateman/Dropbox/Components/Datasheets/Temperature%20measurement/AD594_595.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">CERDIP-14</field>
+        <field name="Part#">AD595CQ</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="AD595-jp_components" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589E58D9</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>16MHz</value>
+      <footprint>Crystals:Crystal_HC49-U_Vertical</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">16MHz Vertical crystal</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">FOXSLF-160-20</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="Crystal-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>589E8900</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>5915E444</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>18pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>59161BEE</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>18pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>59161C96</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_THT:SW_PUSH_6mm_h5mm</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">SKHHAJA010</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="SW_Push-RESCUE-ThermocoupleLogger" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>59308FE2</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_THT:SW_PUSH_6mm_h5mm</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">SKHHAJA010</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="SW_Push-RESCUE-ThermocoupleLogger" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>5930906F</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>ATMEGA328P-PU</value>
+      <footprint>Housings_DIP:DIP-28_W7.62mm</footprint>
+      <datasheet>/Users/johnpateman/Dropbox/Components/Datasheets/microcontroller/atmel/atmega168pa-pu.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">DIP-28</field>
+        <field name="Part#">ATMEGA328P-PU</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="ATMEGA328P-PU-atmel" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>593091B0</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>DS1307+</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/DS1307.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">DS1307ZN+</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="DS1307Z+-jp_components" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>593095B6</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>12pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>594D3028</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>12pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">-</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="ThermocoupleLogger-rescue" part="C_Small-device" description=""/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>594D308E</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Characteristics">-</field>
+        <field name="Description">-</field>
+        <field name="Package_ID">-</field>
+        <field name="Part#">B4B-XH-A</field>
+        <field name="Placement">-</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Micro_Clock/" tstamps="/589D87C6/"/>
+      <tstamp>5AF4BC3D</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead_Small">
+      <description>Ferrite bead, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="1N4007-diode">
+      <footprints>
+        <fp>D*DO?41*</fp>
+        <fp>D*DO?204AL*</fp>
+        <fp>D*SOD81*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4007-diode</field>
+        <field name="Footprint">Diodes_THT:D_DO-41_SOD81_Horizontal_RM10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="7805-jp_components">
+      <footprints>
+        <fp>TO220</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">7805-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="Vout" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="AD595-jp_components">
+      <footprints>
+        <fp>DIP-14_7.62*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD595-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+IN" type="input"/>
+        <pin num="2" name="+C" type="input"/>
+        <pin num="3" name="+T" type="input"/>
+        <pin num="4" name="COM" type="power_in"/>
+        <pin num="5" name="-T" type="input"/>
+        <pin num="6" name="-C" type="input"/>
+        <pin num="7" name="V-" type="power_in"/>
+        <pin num="8" name="FB" type="input"/>
+        <pin num="9" name="V0" type="output"/>
+        <pin num="10" name="COMP" type="input"/>
+        <pin num="11" name="V+" type="power_in"/>
+        <pin num="12" name="+ALM" type="openCol"/>
+        <pin num="13" name="-ALM" type="power_in"/>
+        <pin num="14" name="-IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="ADG407-jp_components">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADG407-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="input"/>
+        <pin num="2" name="DB" type="passive"/>
+        <pin num="4" name="S8B" type="input"/>
+        <pin num="5" name="S7B" type="input"/>
+        <pin num="6" name="S6B" type="input"/>
+        <pin num="7" name="S5B" type="input"/>
+        <pin num="8" name="S4B" type="input"/>
+        <pin num="9" name="S3B" type="input"/>
+        <pin num="10" name="S2B" type="input"/>
+        <pin num="11" name="S1B" type="input"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="15" name="A2" type="input"/>
+        <pin num="16" name="A1" type="input"/>
+        <pin num="17" name="A0" type="input"/>
+        <pin num="18" name="EN" type="input"/>
+        <pin num="19" name="S1A" type="input"/>
+        <pin num="20" name="S2A" type="input"/>
+        <pin num="21" name="S3A" type="input"/>
+        <pin num="22" name="S4A" type="input"/>
+        <pin num="23" name="S5A" type="input"/>
+        <pin num="24" name="S6A" type="input"/>
+        <pin num="25" name="S7A" type="input"/>
+        <pin num="26" name="S8A" type="input"/>
+        <pin num="28" name="DA" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="ATMEGA328P-PU-atmel">
+      <footprints>
+        <fp>28DIP-ELL600</fp>
+        <fp>28dip600</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATMEGA328P-PU-atmel</field>
+        <field name="Footprint">DIL28</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
+        <pin num="2" name="(PCINT16/RXD)PD0" type="BiDi"/>
+        <pin num="3" name="(PCINT17/TXD)PD1" type="BiDi"/>
+        <pin num="4" name="(PCINT18/INT0)PD2" type="BiDi"/>
+        <pin num="5" name="(PCINT19/OC2B/INT1)PD3" type="BiDi"/>
+        <pin num="6" name="(PCINT20/XCK/T0)PD4" type="BiDi"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
+        <pin num="10" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
+        <pin num="11" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
+        <pin num="12" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
+        <pin num="13" name="(PCINT23/AIN1)PD7" type="BiDi"/>
+        <pin num="14" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
+        <pin num="15" name="(PCINT1/OC1A)PB1" type="BiDi"/>
+        <pin num="16" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
+        <pin num="17" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
+        <pin num="18" name="(PCINT4/MISO)PB4" type="BiDi"/>
+        <pin num="19" name="(PCINT5/SCK)PB5" type="BiDi"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="BiDi"/>
+        <pin num="22" name="GND" type="power_in"/>
+        <pin num="23" name="(PCINT8/ADC0)PC0" type="BiDi"/>
+        <pin num="24" name="(PCINT9/ADC1)PC1" type="BiDi"/>
+        <pin num="25" name="(PCINT10/ADC2)PC2" type="BiDi"/>
+        <pin num="26" name="(PCINT11/ADC3)PC3" type="BiDi"/>
+        <pin num="27" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
+        <pin num="28" name="(PCINT13/SCL/ADC5)PC5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="BD139-RESCUE-ThermocoupleLogger">
+      <footprints>
+        <fp>TO?126*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BD139-RESCUE-ThermocoupleLogger</field>
+        <field name="Footprint">TO_SOT_Packages_THT:TO-126_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="BS250-RESCUE-ThermocoupleLogger">
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BS250-RESCUE-ThermocoupleLogger</field>
+        <field name="Footprint">TO_SOT_Packages_THT:TO-92_Molded_Narrow</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="Barrel_Jack-RESCUE-ThermocoupleLogger">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack-RESCUE-ThermocoupleLogger</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="Battery-device">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="Battery_Cell-device">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="CP_Small-device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="C_Small-device">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="Crystal-device">
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="DS1307Z+-jp_components">
+      <footprints>
+        <fp>SOIC-8_3.8x4.9*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS1307Z+-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="X1" type="input"/>
+        <pin num="2" name="X2" type="output"/>
+        <pin num="3" name="VBAT" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="SQW/OUT" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="D_Schottky_Small-device">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_Small-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="D_Zener_Small_ALT-device">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener_Small_ALT-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="I2C_20x4_DISPLAY-jp_components">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">I2C_20x4_DISPLAY-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="SDA" type="input"/>
+        <pin num="4" name="SCL" type="input"/>
+        <pin num="5" name="B_LIGHT" type="power_in"/>
+        <pin num="6" name="B_LIGHT_GND" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="LM3940-jp_components">
+      <footprints>
+        <fp>TO220</fp>
+        <fp>TO223</fp>
+        <fp>TO263</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM3940-jp_components</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="Vout" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="R-device">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="R_Small-device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small-device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="SD_ebay-uSD-push_push_SMD-RESCUE-ThermocoupleLogger-ThermocoupleLogger-rescue">
+      <fields>
+        <field name="Reference">XS</field>
+        <field name="Value">SD_ebay-uSD-push_push_SMD-RESCUE-ThermocoupleLogger-ThermocoupleLogger-rescue</field>
+        <field name="Footprint">Connectors:Conn_uSDcard</field>
+        <field name="Datasheet">_</field>
+        <field name="Manf#">_</field>
+        <field name="Manf">ebay</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DAT2" type="BiDi"/>
+        <pin num="2" name="CS/DAT3" type="input"/>
+        <pin num="3" name="DI/CMD" type="input"/>
+        <pin num="4" name="Vdd" type="input"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="GND" type="input"/>
+        <pin num="7" name="DO/DAT0" type="input"/>
+        <pin num="8" name="DAT1" type="BiDi"/>
+        <pin num="9" name="CD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="SW_Push-RESCUE-ThermocoupleLogger">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push-RESCUE-ThermocoupleLogger</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ThermocoupleLogger-rescue" part="TC_Connector-jp_components">
+      <footprints>
+        <fp>2</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TC_Connector-jp_components</field>
+        <field name="Footprint">Wire_Pads:SolderWirePad_2x_2-5mmDrill</field>
+        <field name="Manuf">-</field>
+        <field name="Part#">-</field>
+        <field name="Vendor">-</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TC1" type="BiDi"/>
+        <pin num="2" name="TC2" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/Users/johnpateman/EDA_Workspace/Libraries/kicad-symbols/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Users/johnpateman/EDA_Workspace/Libraries/kicad-symbols/Device.lib</uri>
+    </library>
+    <library logical="ThermocoupleLogger-rescue">
+      <uri>/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="9V0">
+      <node ref="U2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="2" name="/Thermocouple_PSU/Supply">
+      <node ref="J1" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(D2-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="C2" pin="2"/>
+      <node ref="P2" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U12" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U15" pin="4"/>
+      <node ref="U14" pin="8"/>
+      <node ref="D5" pin="2"/>
+      <node ref="U14" pin="22"/>
+      <node ref="D4" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="XS1" pin="6"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U13" pin="7"/>
+      <node ref="U13" pin="4"/>
+      <node ref="U13" pin="13"/>
+      <node ref="U13" pin="1"/>
+      <node ref="U11" pin="12"/>
+      <node ref="P1" pin="6"/>
+      <node ref="BT2" pin="2"/>
+      <node ref="U11" pin="28"/>
+    </net>
+    <net code="6" name="5V0">
+      <node ref="R6" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U11" pin="18"/>
+      <node ref="P1" pin="2"/>
+      <node ref="U11" pin="1"/>
+      <node ref="U13" pin="11"/>
+      <node ref="U14" pin="20"/>
+      <node ref="U14" pin="7"/>
+      <node ref="U15" pin="8"/>
+      <node ref="U12" pin="5"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U12" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P2" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="7" name="3V3">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="XS1" pin="4"/>
+    </net>
+    <net code="8" name="/Thermocouple connectors/SB1">
+      <node ref="L9" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U11" pin="11"/>
+    </net>
+    <net code="9" name="/Thermocouple connectors/SB2">
+      <node ref="C6" pin="2"/>
+      <node ref="L10" pin="2"/>
+      <node ref="U11" pin="10"/>
+    </net>
+    <net code="10" name="/Thermocouple connectors/SB3">
+      <node ref="C7" pin="2"/>
+      <node ref="L11" pin="2"/>
+      <node ref="U11" pin="9"/>
+    </net>
+    <net code="11" name="/Thermocouple connectors/SB4">
+      <node ref="U11" pin="8"/>
+      <node ref="L12" pin="2"/>
+      <node ref="C8" pin="2"/>
+    </net>
+    <net code="12" name="/Thermocouple connectors/SB5">
+      <node ref="U11" pin="7"/>
+      <node ref="L13" pin="2"/>
+      <node ref="C9" pin="2"/>
+    </net>
+    <net code="13" name="/Thermocouple connectors/SB6">
+      <node ref="C10" pin="2"/>
+      <node ref="U11" pin="6"/>
+      <node ref="L14" pin="2"/>
+    </net>
+    <net code="14" name="/Thermocouple connectors/SB7">
+      <node ref="U11" pin="5"/>
+      <node ref="L15" pin="2"/>
+      <node ref="C11" pin="2"/>
+    </net>
+    <net code="15" name="/Thermocouple connectors/SA1">
+      <node ref="C5" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="U11" pin="19"/>
+    </net>
+    <net code="16" name="/Thermocouple connectors/SA3">
+      <node ref="L3" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U11" pin="21"/>
+    </net>
+    <net code="17" name="/Thermocouple connectors/SA4">
+      <node ref="U11" pin="22"/>
+      <node ref="C8" pin="1"/>
+      <node ref="L4" pin="1"/>
+    </net>
+    <net code="18" name="/Thermocouple connectors/SA5">
+      <node ref="U11" pin="23"/>
+      <node ref="C9" pin="1"/>
+      <node ref="L5" pin="1"/>
+    </net>
+    <net code="19" name="/Thermocouple connectors/SA6">
+      <node ref="C10" pin="1"/>
+      <node ref="U11" pin="24"/>
+      <node ref="L6" pin="1"/>
+    </net>
+    <net code="20" name="/Thermocouple connectors/SA7">
+      <node ref="L7" pin="1"/>
+      <node ref="U11" pin="25"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="21" name="/Thermocouple connectors/SA8">
+      <node ref="U11" pin="26"/>
+      <node ref="L8" pin="1"/>
+      <node ref="C12" pin="1"/>
+    </net>
+    <net code="22" name="Net-(L9-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="L9" pin="1"/>
+    </net>
+    <net code="23" name="Net-(L1-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(L10-Pad1)">
+      <node ref="U4" pin="1"/>
+      <node ref="L10" pin="1"/>
+    </net>
+    <net code="25" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="26" name="Net-(L11-Pad1)">
+      <node ref="L11" pin="1"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="27" name="Net-(L3-Pad2)">
+      <node ref="U5" pin="2"/>
+      <node ref="L3" pin="2"/>
+    </net>
+    <net code="28" name="Net-(L12-Pad1)">
+      <node ref="U6" pin="1"/>
+      <node ref="L12" pin="1"/>
+    </net>
+    <net code="29" name="Net-(L4-Pad2)">
+      <node ref="U6" pin="2"/>
+      <node ref="L4" pin="2"/>
+    </net>
+    <net code="30" name="Net-(L13-Pad1)">
+      <node ref="L13" pin="1"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="31" name="Net-(L5-Pad2)">
+      <node ref="U7" pin="2"/>
+      <node ref="L5" pin="2"/>
+    </net>
+    <net code="32" name="Net-(L14-Pad1)">
+      <node ref="U8" pin="1"/>
+      <node ref="L14" pin="1"/>
+    </net>
+    <net code="33" name="Net-(L6-Pad2)">
+      <node ref="U8" pin="2"/>
+      <node ref="L6" pin="2"/>
+    </net>
+    <net code="34" name="Net-(L15-Pad1)">
+      <node ref="U9" pin="1"/>
+      <node ref="L15" pin="1"/>
+    </net>
+    <net code="35" name="Net-(L7-Pad2)">
+      <node ref="U9" pin="2"/>
+      <node ref="L7" pin="2"/>
+    </net>
+    <net code="36" name="Net-(L16-Pad1)">
+      <node ref="U10" pin="1"/>
+      <node ref="L16" pin="1"/>
+    </net>
+    <net code="37" name="Net-(L8-Pad2)">
+      <node ref="L8" pin="2"/>
+      <node ref="U10" pin="2"/>
+    </net>
+    <net code="39" name="/Thermocouple connectors/SA2">
+      <node ref="L2" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U11" pin="20"/>
+    </net>
+    <net code="41" name="/Thermocouple connectors/SB8">
+      <node ref="U11" pin="4"/>
+      <node ref="L16" pin="2"/>
+      <node ref="C12" pin="2"/>
+    </net>
+    <net code="42" name="SLCT2">
+      <node ref="U14" pin="26"/>
+      <node ref="U11" pin="15"/>
+    </net>
+    <net code="43" name="SLCT1">
+      <node ref="U14" pin="25"/>
+      <node ref="U11" pin="16"/>
+    </net>
+    <net code="44" name="SLCT0">
+      <node ref="U14" pin="24"/>
+      <node ref="U11" pin="17"/>
+    </net>
+    <net code="45" name="DB_MUX">
+      <node ref="C13" pin="2"/>
+      <node ref="U13" pin="14"/>
+      <node ref="U11" pin="2"/>
+    </net>
+    <net code="46" name="SDA">
+      <node ref="U12" pin="3"/>
+      <node ref="U14" pin="27"/>
+      <node ref="U15" pin="5"/>
+      <node ref="P2" pin="3"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="47" name="SCL">
+      <node ref="P2" pin="4"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U15" pin="6"/>
+      <node ref="U14" pin="28"/>
+      <node ref="U12" pin="4"/>
+    </net>
+    <net code="48" name="B_LIGHT">
+      <node ref="U14" pin="23"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="49" name="Net-(Q2-Pad2)">
+      <node ref="U12" pin="6"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="50" name="Net-(Q2-Pad3)">
+      <node ref="R2" pin="2"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="51" name="MOSI">
+      <node ref="U14" pin="17"/>
+      <node ref="P1" pin="4"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="52" name="SS">
+      <node ref="R3" pin="1"/>
+      <node ref="U14" pin="16"/>
+    </net>
+    <net code="53" name="SCK">
+      <node ref="U14" pin="19"/>
+      <node ref="R5" pin="1"/>
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="54" name="Net-(XS1-Pad1)">
+      <node ref="XS1" pin="1"/>
+    </net>
+    <net code="55" name="Net-(D4-Pad1)">
+      <node ref="R3" pin="2"/>
+      <node ref="XS1" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="56" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="XS1" pin="3"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="57" name="Net-(D5-Pad1)">
+      <node ref="XS1" pin="5"/>
+      <node ref="R5" pin="2"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="58" name="MISO">
+      <node ref="XS1" pin="7"/>
+      <node ref="U14" pin="18"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="59" name="Net-(XS1-Pad8)">
+      <node ref="XS1" pin="8"/>
+    </net>
+    <net code="60" name="Net-(XS1-Pad9)">
+      <node ref="XS1" pin="9"/>
+    </net>
+    <net code="61" name="Net-(U14-Pad15)">
+      <node ref="U14" pin="15"/>
+    </net>
+    <net code="62" name="Net-(U14-Pad2)">
+      <node ref="U14" pin="2"/>
+    </net>
+    <net code="63" name="Net-(U14-Pad3)">
+      <node ref="U14" pin="3"/>
+    </net>
+    <net code="64" name="Net-(U14-Pad5)">
+      <node ref="U14" pin="5"/>
+    </net>
+    <net code="65" name="Net-(U14-Pad6)">
+      <node ref="U14" pin="6"/>
+    </net>
+    <net code="66" name="Net-(U14-Pad11)">
+      <node ref="U14" pin="11"/>
+    </net>
+    <net code="67" name="Net-(U14-Pad12)">
+      <node ref="U14" pin="12"/>
+    </net>
+    <net code="68" name="Net-(U14-Pad13)">
+      <node ref="U14" pin="13"/>
+    </net>
+    <net code="69" name="RESET">
+      <node ref="P1" pin="5"/>
+      <node ref="U14" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="70" name="Net-(U13-Pad10)">
+      <node ref="U13" pin="10"/>
+    </net>
+    <net code="71" name="Net-(U13-Pad12)">
+      <node ref="U13" pin="12"/>
+    </net>
+    <net code="72" name="Net-(U13-Pad2)">
+      <node ref="U13" pin="2"/>
+    </net>
+    <net code="73" name="Net-(U13-Pad3)">
+      <node ref="U13" pin="3"/>
+    </net>
+    <net code="74" name="Net-(U13-Pad5)">
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="75" name="Net-(U13-Pad6)">
+      <node ref="U13" pin="6"/>
+    </net>
+    <net code="76" name="Net-(U14-Pad21)">
+      <node ref="U14" pin="21"/>
+    </net>
+    <net code="77" name="Net-(C14-Pad2)">
+      <node ref="U14" pin="9"/>
+      <node ref="C14" pin="2"/>
+      <node ref="Y1" pin="2"/>
+    </net>
+    <net code="78" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="U14" pin="10"/>
+    </net>
+    <net code="79" name="TEMP">
+      <node ref="U14" pin="14"/>
+      <node ref="U13" pin="9"/>
+      <node ref="U13" pin="8"/>
+    </net>
+    <net code="80" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="U14" pin="4"/>
+    </net>
+    <net code="81" name="Net-(BT2-Pad1)">
+      <node ref="U15" pin="3"/>
+      <node ref="BT2" pin="1"/>
+    </net>
+    <net code="82" name="Net-(U15-Pad7)">
+      <node ref="U15" pin="7"/>
+    </net>
+    <net code="83" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1"/>
+      <node ref="Y2" pin="1"/>
+      <node ref="U15" pin="1"/>
+    </net>
+    <net code="84" name="Net-(C17-Pad1)">
+      <node ref="Y2" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U15" pin="2"/>
+    </net>
+  </nets>
+</export>

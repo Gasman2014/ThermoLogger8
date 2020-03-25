@@ -1,0 +1,435 @@
+EESchema Schematic File Version 4
+LIBS:ThermocoupleLogger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "8-Channel Thermocouple Datalogger"
+Date "2019-01-03"
+Rev "1.1"
+Comp "JP Enterprises"
+Comment1 "Based on an original AD595 design"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6900 2600 2    60   Input ~ 0
+3V3
+Text GLabel 1250 5400 0    60   Input ~ 0
+B_LIGHT
+$Comp
+L power:GND #PWR0107
+U 1 1 589E9EFA
+P 1900 6050
+F 0 "#PWR0107" H 1900 5800 50  0001 C CNN
+F 1 "GND" H 1900 5900 50  0000 C CNN
+F 2 "" H 1900 6050 50  0000 C CNN
+F 3 "" H 1900 6050 50  0000 C CNN
+	1    1900 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 589EBC96
+P 1500 5400
+F 0 "R2" V 1600 5400 50  0000 C CNN
+F 1 "10K" V 1400 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 5400 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf" H 1500 5400 50  0001 C CNN
+F 4 "-" H 1500 5400 60  0001 C CNN "Description"
+F 5 "-" H 1500 5400 60  0001 C CNN "Characteristics"
+F 6 "-" H 1500 5400 60  0001 C CNN "Package_ID"
+F 7 "-" H 1500 5400 60  0001 C CNN "Placement"
+F 8 "-" H 1500 5400 60  0001 C CNN "Part#"
+	1    1500 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BD139 Q2
+U 1 1 589EBCEC
+P 1800 5400
+F 0 "Q2" H 2000 5475 50  0000 L CNN
+F 1 "BD139" H 2000 5400 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 2000 5325 50  0001 L CIN
+F 3 "" H 1800 5400 50  0000 L CNN
+F 4 "-" H 1800 5400 60  0001 C CNN "Description"
+F 5 "-" H 1800 5400 60  0001 C CNN "Characteristics"
+F 6 "-" H 1800 5400 60  0001 C CNN "Package_ID"
+F 7 "-" H 1800 5400 60  0001 C CNN "Placement"
+F 8 "BD139" H 1800 5400 60  0001 C CNN "Part#"
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9300 3200 2    60   Input ~ 0
+SCK
+Text GLabel 7650 3950 2    60   Input ~ 0
+MISO
+Text GLabel 9300 3350 2    60   Input ~ 0
+MOSI
+Text GLabel 9300 3500 2    60   Input ~ 0
+SS
+$Comp
+L Device:D_Zener_Small D5
+U 1 1 59314274
+P 8600 4200
+F 0 "D5" V 8500 4100 50  0000 L CNN
+F 1 "3.3V" H 8700 4150 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8600 4200 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf" V 8600 4200 50  0001 C CNN
+F 4 "-" H 8600 4200 60  0001 C CNN "Description"
+F 5 "-" H 8600 4200 60  0001 C CNN "Characteristics"
+F 6 "-" H 8600 4200 60  0001 C CNN "Package_ID"
+F 7 "-" H 8600 4200 60  0001 C CNN "Placement"
+F 8 "BZT52C3V3-7-F" V 8600 4200 60  0001 C CNN "Part#"
+	1    8600 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D4
+U 1 1 593144F7
+P 8100 4200
+F 0 "D4" V 8000 4100 50  0000 L CNN
+F 1 "3.3V" H 8150 4150 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8100 4200 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf" V 8100 4200 50  0001 C CNN
+F 4 "-" H 8100 4200 60  0001 C CNN "Description"
+F 5 "-" H 8100 4200 60  0001 C CNN "Characteristics"
+F 6 "-" H 8100 4200 60  0001 C CNN "Package_ID"
+F 7 "-" H 8100 4200 60  0001 C CNN "Placement"
+F 8 "BZT52C3V3-7-F" V 8100 4200 60  0001 C CNN "Part#"
+	1    8100 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D3
+U 1 1 59314520
+P 8350 4200
+F 0 "D3" V 8250 4100 50  0000 L CNN
+F 1 "3.3V" H 8400 4150 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8350 4200 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf" V 8350 4200 50  0001 C CNN
+F 4 "-" H 8350 4200 60  0001 C CNN "Description"
+F 5 "-" H 8350 4200 60  0001 C CNN "Characteristics"
+F 6 "-" H 8350 4200 60  0001 C CNN "Package_ID"
+F 7 "-" H 8350 4200 60  0001 C CNN "Placement"
+F 8 "BZT52C3V3-7-F" V 8350 4200 60  0001 C CNN "Part#"
+	1    8350 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 59314AC7
+P 8950 3350
+F 0 "R4" V 8900 3200 50  0000 C CNN
+F 1 "220R" V 8900 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8950 3350 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf" H 8950 3350 50  0001 C CNN
+F 4 "-" H 8950 3350 60  0001 C CNN "Description"
+F 5 "-" H 8950 3350 60  0001 C CNN "Characteristics"
+F 6 "-" H 8950 3350 60  0001 C CNN "Package_ID"
+F 7 "-" H 8950 3350 60  0001 C CNN "Placement"
+F 8 "-" H 8950 3350 60  0001 C CNN "Part#"
+	1    8950 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 59314B9F
+P 8950 3500
+F 0 "R3" V 8900 3350 50  0000 C CNN
+F 1 "220R" V 8900 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8950 3500 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf" H 8950 3500 50  0001 C CNN
+F 4 "-" H 8950 3500 60  0001 C CNN "Description"
+F 5 "-" H 8950 3500 60  0001 C CNN "Characteristics"
+F 6 "-" H 8950 3500 60  0001 C CNN "Package_ID"
+F 7 "-" H 8950 3500 60  0001 C CNN "Placement"
+F 8 "-" H 8950 3500 60  0001 C CNN "Part#"
+	1    8950 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 59314C06
+P 8950 3200
+F 0 "R5" V 8900 3050 50  0000 C CNN
+F 1 "220R" V 8900 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8950 3200 50  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf" H 8950 3200 50  0001 C CNN
+F 4 "-" H 8950 3200 60  0001 C CNN "Description"
+F 5 "-" H 8950 3200 60  0001 C CNN "Characteristics"
+F 6 "-" H 8950 3200 60  0001 C CNN "Package_ID"
+F 7 "-" H 8950 3200 60  0001 C CNN "Placement"
+F 8 "-" H 8950 3200 60  0001 C CNN "Part#"
+	1    8950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 59542FA1
+P 6750 4900
+F 0 "#PWR0109" H 6750 4650 50  0001 C CNN
+F 1 "GND" H 6750 4750 50  0000 C CNN
+F 2 "" H 6750 4900 50  0000 C CNN
+F 3 "" H 6750 4900 50  0000 C CNN
+	1    6750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L JP_Connectors:SD_ebay-uSD-push_push_SMD XS1
+U 1 1 59544647
+P 6900 3650
+AR Path="/59544647" Ref="XS1"  Part="1" 
+AR Path="/589D5546/59544647" Ref="XS1"  Part="1" 
+F 0 "XS1" H 7150 3000 50  0000 R CNN
+F 1 "SD_ebay-uSD-push/push_SMD" V 6500 4250 50  0000 R CNN
+F 2 "JP_Connectors:Conn_uSDcard" H 6900 3650 10  0001 C CNN
+F 3 "/Users/johnpateman/Dropbox/Components/Datasheets/SD_Card/5429_b1.pdf" H 6900 3650 10  0001 C CNN
+F 4 "-" H 6900 3650 60  0001 C CNN "Description"
+F 5 "-" H 6900 3650 60  0001 C CNN "Characteristics"
+F 6 "-" H 6900 3650 60  0001 C CNN "Package_ID"
+F 7 "-" H 6900 3650 60  0001 C CNN "Placement"
+F 8 "SD_Card[uSD]" H 6900 3650 60  0001 C CNN "Part#"
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7300 3800
+NoConn ~ 7300 3650
+Wire Wire Line
+	500  6700 450  6700
+Wire Wire Line
+	1400 5400 1250 5400
+Wire Wire Line
+	6800 2600 6800 3000
+Wire Wire Line
+	7300 3950 7650 3950
+Wire Wire Line
+	7300 3200 8600 3200
+Wire Wire Line
+	9050 3200 9300 3200
+Wire Wire Line
+	8600 4100 8600 3200
+Connection ~ 8600 3200
+Wire Wire Line
+	7300 3500 8100 3500
+Wire Wire Line
+	7300 3350 8350 3350
+Wire Wire Line
+	9050 3350 9300 3350
+Wire Wire Line
+	8350 3350 8350 4100
+Connection ~ 8350 3350
+Wire Wire Line
+	8100 3500 8100 4100
+Connection ~ 8100 3500
+Wire Wire Line
+	8100 4300 8100 4500
+Wire Wire Line
+	8100 4500 8350 4500
+Wire Wire Line
+	8600 4500 8600 4300
+Wire Wire Line
+	8350 4300 8350 4500
+Connection ~ 8350 4500
+NoConn ~ 7300 4100
+Wire Wire Line
+	9050 3500 9300 3500
+Wire Wire Line
+	8600 3200 8850 3200
+Wire Wire Line
+	8350 3350 8850 3350
+Wire Wire Line
+	8100 3500 8850 3500
+Wire Wire Line
+	8350 4500 8600 4500
+Wire Wire Line
+	8600 4500 8600 4800
+Connection ~ 8600 4500
+Wire Wire Line
+	1900 5600 1900 6050
+NoConn ~ 4100 3650
+NoConn ~ 4100 3750
+NoConn ~ 4100 3850
+NoConn ~ 4100 3950
+Text GLabel 2500 3850 0    59   Input ~ 0
+RS
+Text GLabel 2500 3950 0    59   Input ~ 0
+EN
+Text GLabel 2500 4050 0    59   Input ~ 0
+DB4
+Text GLabel 2500 4150 0    59   Input ~ 0
+DB5
+Text GLabel 2500 4250 0    59   Input ~ 0
+DB6
+Text GLabel 2500 4350 0    59   Input ~ 0
+DB7
+$Comp
+L Device:R_POT RV1
+U 1 1 5C2E9DDA
+P 1900 4450
+F 0 "RV1" H 1830 4496 50  0000 R CNN
+F 1 "5k" H 1830 4405 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V05_Vertical" H 1900 4450 50  0001 C CNN
+F 3 "~" H 1900 4450 50  0001 C CNN
+	1    1900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5C300BBF
+P 2400 4850
+F 0 "#PWR0119" H 2400 4600 50  0001 C CNN
+F 1 "GND" H 2400 4700 50  0000 C CNN
+F 2 "" H 2400 4850 50  0000 C CNN
+F 3 "" H 2400 4850 50  0000 C CNN
+	1    2400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female #J1
+U 1 1 5C381CA8
+P 3050 4150
+F 0 "#J1" H 3000 4800 50  0000 C CNN
+F 1 "Conn_01x12_Female" H 2944 4744 50  0001 C CNN
+F 2 "" H 3050 4150 50  0001 C CNN
+F 3 "~" H 3050 4150 50  0001 C CNN
+	1    3050 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J2
+U 1 1 5C381D8E
+P 2700 4150
+F 0 "J2" H 2800 4800 50  0000 R CNN
+F 1 "Conn_01x12_Male" H 2673 4032 50  0001 R CNN
+F 2 "Connector_JST:JST_XH_B10B-XH-A_1x10_P2.50mm_Vertical" H 2700 4150 50  0001 C CNN
+F 3 "~" H 2700 4150 50  0001 C CNN
+	1    2700 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4350 4100 4350
+Wire Wire Line
+	3250 4250 4100 4250
+Wire Wire Line
+	4100 4150 3250 4150
+Wire Wire Line
+	3250 4050 4100 4050
+Wire Wire Line
+	4100 3300 3800 3300
+Wire Wire Line
+	4100 3150 3650 3150
+Wire Wire Line
+	3650 3150 3650 3850
+Wire Wire Line
+	3650 3850 3250 3850
+Wire Wire Line
+	4500 4550 4500 4650
+Wire Wire Line
+	2400 4650 2400 4850
+Wire Wire Line
+	3250 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 2700
+Wire Wire Line
+	3250 4650 3950 4650
+Wire Wire Line
+	3250 3950 3800 3950
+Wire Wire Line
+	3800 3950 3800 3300
+Wire Wire Line
+	4100 3450 3950 3450
+Wire Wire Line
+	3950 3450 3950 4650
+Connection ~ 3950 4650
+Wire Wire Line
+	3950 4650 4500 4650
+Text GLabel 2000 3550 2    59   Input ~ 0
+5V0
+Wire Wire Line
+	1900 3550 1900 3750
+Text Notes 3550 2500 0    79   ~ 16
+Off Board Display
+Text Label 4700 2900 0    39   ~ 0
+CONTRAST
+Wire Wire Line
+	5200 3750 4900 3750
+$Comp
+L ThermocoupleLogger-rescue:NHD-0420H1Z-JP_Displays #U1
+U 1 1 5C3A19B2
+P 4500 3750
+AR Path="/5C3A19B2" Ref="#U1"  Part="1" 
+AR Path="/589D5546/5C3A19B2" Ref="#U1"  Part="1" 
+F 0 "#U1" H 4300 4550 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 4850 2950 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 4500 2850 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 4600 3650 50  0001 C CNN
+	1    4500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2700 4500 2700
+Wire Wire Line
+	4500 2700 4500 2950
+Connection ~ 4500 2700
+Wire Wire Line
+	5200 2700 5200 3750
+Text Label 3450 4550 0    39   ~ 0
+BACKLIGHT
+Text Label 5050 3950 0    39   ~ 0
+BACKLIGHT
+Wire Wire Line
+	4900 3950 5050 3950
+Wire Wire Line
+	3250 4450 3450 4450
+Text Label 3450 4450 0    39   ~ 0
+CONTRAST
+Wire Wire Line
+	2050 4450 2500 4450
+Wire Wire Line
+	4500 2700 5200 2700
+Wire Wire Line
+	4600 2950 4600 2900
+Wire Wire Line
+	4600 2900 4700 2900
+Wire Wire Line
+	2500 3750 1900 3750
+Connection ~ 1900 3750
+Wire Wire Line
+	1900 3750 1900 4300
+Wire Notes Line
+	3100 3650 3100 4750
+Wire Notes Line
+	2650 4750 3100 4750
+Wire Notes Line
+	2650 3650 2650 4750
+Wire Notes Line
+	2650 3650 3100 3650
+Wire Wire Line
+	8600 4800 6750 4800
+Wire Wire Line
+	6750 4300 6750 4800
+Connection ~ 6750 4800
+Wire Wire Line
+	6750 4800 6750 4900
+Wire Wire Line
+	3250 4550 3450 4550
+Wire Wire Line
+	1900 4600 1900 4800
+Wire Wire Line
+	2500 4550 2200 4550
+Wire Wire Line
+	2200 4550 2200 4800
+Wire Wire Line
+	2200 4800 1900 4800
+Connection ~ 1900 4800
+Wire Wire Line
+	1900 4800 1900 5200
+Wire Wire Line
+	1900 3550 2000 3550
+Wire Wire Line
+	6800 2600 6900 2600
+Wire Wire Line
+	2400 4650 2500 4650
+$EndSCHEMATC

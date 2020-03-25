@@ -1,0 +1,4 @@
+uuid:         620aab7ae43f193c677cefd85ce8c4af90d80089 2017-11-02 23:16:33 UTC
+parent:       323c0f4fac98a161cad16ea060786b3bde12e10e 2017-10-20 15:01:08 UTC
+tags:         Ver_5V
+comment:      Anotated all components with Part numbers (user: johnpateman)

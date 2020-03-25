@@ -1,0 +1,50 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Part#,Placement,Package_ID,Characteristics
+1,-,Battery-device,BT1,9V,JST_XH_B02B-XH-A_02x2.50mm_Straight,1,/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf,B2B-XH-A,-,-,-
+2,-,Battery_Cell-device,BT2,Battery,Keystone_103_1x20mm-CoinCell,1,,KEYSTONE 103,-,-,-
+3,-,C_Small-device,C5 C6 C7 C8 C9 C10 C11 C12 C13,10nF,C_0805,9,,-,-,-,X7R -
+4,-,CP_Small,C4,10uF,CP_Elec_4x5.4,1,,EEEFK1C100R,-,-,-
+5,-,C_Small-device,C16 C17,12pF,C_0805,2,,-,-,-,-
+6,-,C_Small-device,C14 C15,18pF,C_0805,2,,-,-,-,-
+7,-,C_Small,C3,1uF,C_0805,1,,-,-,-,-
+8,-,C_Small-device,C1,470nF,C_0805,1,,-,-,-,X7R
+9,-,CP_Small-device,C2,47uF,CP_Elec_5x5.3,1,,EEEFK1C470UR,-,-,-
+10,-,1N4007-diode,D1,1N4007,D_DO-41_SOD81_P10.16mm_Horizontal,1,,1N4007,+V1 -V2,-,-
+11,-,D_Zener_Small_ALT-device,D3 D4 D5,3.3V,D_SOD-123,3,/Users/johnpateman/Dropbox/Components/Datasheets/Diodes/BZT52C3V3-7-F.pdf,BZT52C3V3-7-F,-,-,-
+12,-,D_Schottky_Small-device,D2,9V,D_SOD-323,1,-,BAT60JFILM,+V2 -V1,-,-
+13,-,Barrel_Jack-RESCUE-ThermocoupleLogger,J1,Barrel_Jack,BARREL_JACK,1,,MJ-179PH,-,-,-
+14,-,Ferrite_Bead_Small,L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 L11 L12 L13 L14 L15 L16,150,L_0805_2012Metric,16,/Users/johnpateman/Dropbox/Components/Datasheets/ferrite/tdk/fcd7f82f19a65440ec3af90a524c5a0e.pdf,MPZ2012S101A,-,-,-
+15,-,Conn_02x03_Odd_Even,P1,CONN_02X03,Pin_Header_Straight_2x03_Pitch2.54mm,1,,75869-131LF,-,-,-
+16,-,Conn_01x04,P2,Conn_01x04,JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical,1,~,B4B-XH-A,-,-,-
+17,-,BD139-RESCUE-ThermocoupleLogger,Q2,BD139,TO-126_Vertical,1,,BD139,-,-,-
+18,-,BS250-RESCUE-ThermocoupleLogger,Q1,BS250,TSOT-23,1,,BS250FTA,+V2 -V1,-,-
+19,-,R-device,R1,10K,R_0805,1,/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf,-,+V2 -V1,-,-
+20,-,R_Small-device,R2 R8,10K,R_0805,2,/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf,-,-,-,-
+21,-,R_Small-device,R3 R4 R5,220R,R_0805,3,/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf,-,-,-,-
+22,-,R-device,R6 R7,5.1K,R_0805,2,/Users/johnpateman/Dropbox/Components/Datasheets/resistor_smd/yageo___phycomp/996acc683d858e9d3728cdae3cb41e84.pdf,-,-,-,-
+23,-,SW_Push-RESCUE-ThermocoupleLogger,SW1 SW2,SW_Push,SW_PUSH_6mm_h5mm,2,,SKHHAJA010,-,-,-
+24,-,7805-jp_components,U2,7805,TO-220_Vertical,1,,LM7805,-,-,-
+25,-,AD595-jp_components,U13,AD595,DIP-14_W7.62mm,1,file:///Users/johnpateman/Dropbox/Components/Datasheets/Temperature%20measurement/AD594_595.pdf,AD595CQ,-,CERDIP-14,-
+26,-,ADG407-jp_components,U11,ADG407,DIP-28_W15.24mm,1,,ADG407,-,PDIP-28_Wide,-
+27,-,ATMEGA328P-PU-atmel,U14,ATMEGA328P-PU,DIP-28_W7.62mm,1,/Users/johnpateman/Dropbox/Components/Datasheets/microcontroller/atmel/atmega168pa-pu.pdf,ATMEGA328P-PU,-,DIP-28,-
+28,-,DS1307Z+-jp_components,U15,DS1307+,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,https://datasheets.maximintegrated.com/en/ds/DS1307.pdf,DS1307ZN+,-,-,-
+29,-,I2C_20x4_DISPLAY-jp_components,U12,I2C_20x4_DISPLAY,JST_XH_B06B-XH-A_06x2.50mm_Straight,1,,B6B-XH-A,-,-,-
+30,-,LM3940-jp_components,U1,LM3940,SOT-223,1,/Users/johnpateman/Dropbox/Components/Datasheets/Regulators/lm3940.pdf,LM3940IMP-3.3,-,-,-
+31,-,TC_Connector-jp_components,U3 U4 U5 U6 U7 U8 U9 U10,TC_Connector,JST_XH_B02B-XH-A_02x2.50mm_Straight,8,/Users/johnpateman/Dropbox/Components/Datasheets/connectors/eXH.pdf,B2B-XH-A,-,-,-
+32,-,SD_ebay-uSD-push_push_SMD-RESCUE-ThermocoupleLogger-ThermocoupleLogger-rescue,XS1,SD_ebay-uSD-push/push_SMD,Conn_uSDcard,1,/Users/johnpateman/Dropbox/Components/Datasheets/SD_Card/5429_b1.pdf,SD_Card[uSD],-,-,-
+33,16MHz Vertical crystal,Crystal-device,Y1,16MHz,Crystal_HC49-U_Vertical,1,,FOXSLF-160-20,-,-,-
+34,-,Crystal-device,Y2,32.768kHz,Crystal_Round_d3.0mm_Vertical,1,,AB26T-32.768KHZ,-,-,-
+
+
+
+
+
+Component Groups:,34
+Component Count:,73
+Fitted Components:,73
+Number of PCBs:,1
+Total components:,73
+Schematic Version:,1.1
+Schematic Date:,2017-02-11
+BoM Date:,"Thursday, 29 November 2018 at 19:38:18"
+Schematic Source:,/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.sch
+KiCad Version:,Eeschema (5.0.1-3-g963ef8bb5)

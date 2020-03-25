@@ -1,0 +1,4 @@
+uuid:         adfd4f66951eeb5335d1c4a91e0210d5d108aa21 2017-11-17 14:26:38 UTC
+parent:       d7c0fee4f85c9370c295e011c4474d3fdc0f855e 2017-11-03 09:44:51 UTC
+tags:         parallel_connector
+comment:      Adjusted footprint for battery to JST-XH series (user: johnpateman)

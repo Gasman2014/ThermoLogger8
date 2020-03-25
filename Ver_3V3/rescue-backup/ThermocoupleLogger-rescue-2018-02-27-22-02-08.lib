@@ -1,0 +1,144 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BD139-RESCUE-ThermocoupleLogger
+#
+DEF BD139-RESCUE-ThermocoupleLogger Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "BD139-RESCUE-ThermocoupleLogger" 200 0 50 H V L CNN
+F2 "TO_SOT_Packages_THT:TO-126_Vertical" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+$FPLIST
+ TO?126*
+$ENDFPLIST
+DRAW
+C 50 0 111 0 1 12 N
+P 2 0 1 0 0 0 25 0 N
+P 2 0 1 0 100 -100 25 -25 N
+P 2 0 1 0 100 100 25 25 N
+P 3 0 1 20 25 75 25 -75 25 -75 F
+P 5 0 1 0 49 -70 69 -50 90 -90 49 -70 49 -70 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X C 2 100 200 100 D 50 50 1 1 P
+X B 3 -200 0 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Conn_01x03-RESCUE-ThermocoupleLogger
+#
+DEF Conn_01x03-RESCUE-ThermocoupleLogger J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x03-RESCUE-ThermocoupleLogger" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x05-RESCUE-ThermocoupleLogger
+#
+DEF Conn_01x05-RESCUE-ThermocoupleLogger J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Conn_01x05-RESCUE-ThermocoupleLogger" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x03_Top_Bottom-RESCUE-ThermocoupleLogger
+#
+DEF Conn_02x03_Top_Bottom-RESCUE-ThermocoupleLogger J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Conn_02x03_Top_Bottom-RESCUE-ThermocoupleLogger" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 300 0 150 L 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SW_Push-RESCUE-ThermocoupleLogger
+#
+DEF SW_Push-RESCUE-ThermocoupleLogger SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "SW_Push-RESCUE-ThermocoupleLogger" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# SW_SPST-RESCUE-ThermocoupleLogger
+#
+DEF SW_SPST-RESCUE-ThermocoupleLogger SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "SW_SPST-RESCUE-ThermocoupleLogger" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

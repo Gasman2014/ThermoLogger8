@@ -1,0 +1,7 @@
+uuid:         694c0817d49da92233c9e31c0feafe5217195195 2018-12-01 09:59:20 UTC
+parent:       5034922709994dd389909f162e60e1b737ea69a4 2018-11-30 19:22:05 UTC
+child:        162a23e4f3287c9c34212c83937c62a5d8ec3218 2018-12-17 20:04:35 UTC
+tags:         parallel_connector
+comment:      Updated multiple components with new component numbers to match PartKeepr database. Rerun KiBOM. The .csv file in this commit has had the Display line removed.
+              Need to remove the display line as this seem to cause the K2PK script to fail - it continues to look up all component in the database. Probably related to this
+              component not having a specific footprint. (user: johnpateman)

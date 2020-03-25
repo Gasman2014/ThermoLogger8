@@ -1,0 +1,202 @@
+Info: Reading netlist file “/Users/johnpateman/EDA_Workspace/Projects/Thermocouple_datalogger/Ver_5V/ThermocoupleLogger.net”.
+
+Info: Using references to match components and footprints.
+
+Warning: Footprint of symbol "P2" changed: board footprint "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight", netlist footprint "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical"
+
+Warning: Footprint of symbol "C3" changed: board footprint "Capacitors_SMD:C_0805", netlist footprint "Capacitor_SMD:CP_Elec_4x4.5"
+
+Warning: Footprint of symbol "C4" changed: board footprint "Capacitors_SMD:C_0805", netlist footprint "Capacitor_SMD:CP_Elec_4x4.5"
+
+Info: Checking netlist symbol footprint "BT1:/583C9FB7/5930D2E0:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "BT2:/589D87C6/589D8986:Battery_Holders:Keystone_103_1x20mm-CoinCell".
+
+Info: Checking netlist symbol footprint "C1:/583C9FB7/5915D301:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C2:/583C9FB7/59526106:Capacitors_SMD:CP_Elec_5x5.3".
+
+Info: Checking netlist symbol footprint "C3:/583C9FB7/594D1F83:Capacitor_SMD:CP_Elec_4x4.5".
+
+Changing footprint "C3:/583C9FB7/594D1F83" value from "0.33uF" to "1uF".
+
+Info: Checking netlist symbol footprint "C4:/583C9FB7/589F9200:Capacitor_SMD:CP_Elec_4x4.5".
+
+Changing footprint "C4:/583C9FB7/589F9200" value from "0.1uF" to "10uF".
+
+Info: Checking netlist symbol footprint "C5:/589CE548/589D5633:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C6:/589CE548/589D5A27:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C7:/589CE548/589D5A90:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C8:/589CE548/589D5AFD:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C9:/589CE548/589D5B98:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C10:/589CE548/589D9FEC:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C11:/589CE548/589DA065:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C12:/589CE548/589DA428:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C13:/589D87C6/5915E444:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C14:/589D87C6/59161BEE:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C15:/589D87C6/59161C96:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C16:/589D87C6/594D3028:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "C17:/589D87C6/594D308E:Capacitors_SMD:C_0805".
+
+Info: Checking netlist symbol footprint "D1:/583C9FB7/594BF20E:Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal".
+
+Changing footprint "D1:/583C9FB7/594BF20E" pad "2" net name from "Net-(D1-Pad2)" to "/Thermocouple_PSU/Supply".
+
+Info: Checking netlist symbol footprint "D2:/583C9FB7/594BFB6D:Diodes_SMD:D_SOD-323".
+
+Info: Checking netlist symbol footprint "D3:/589D5546/59314520:Diodes_SMD:D_SOD-123".
+
+Info: Checking netlist symbol footprint "D4:/589D5546/593144F7:Diodes_SMD:D_SOD-123".
+
+Info: Checking netlist symbol footprint "D5:/589D5546/59314274:Diodes_SMD:D_SOD-123".
+
+Info: Checking netlist symbol footprint "J1:/583C9FB7/5930D1C5:Connectors:BARREL_JACK".
+
+Changing footprint "J1:/583C9FB7/5930D1C5" pad "2" net name from "Net-(D1-Pad2)" to "/Thermocouple_PSU/Supply".
+
+Info: Checking netlist symbol footprint "L1:/589CE548/59318E46:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L1:/589CE548/59318E46" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L2:/589CE548/594D1477:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L2:/589CE548/594D1477" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L3:/589CE548/594D14C5:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L3:/589CE548/594D14C5" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L4:/589CE548/594D1517:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L4:/589CE548/594D1517" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L5:/589CE548/594D156A:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L5:/589CE548/594D156A" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L6:/589CE548/594D1615:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L6:/589CE548/594D1615" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L7:/589CE548/594D1669:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L7:/589CE548/594D1669" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L8:/589CE548/594D16C4:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L8:/589CE548/594D16C4" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L9:/589CE548/594D1429:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L9:/589CE548/594D1429" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L10:/589CE548/594D1721:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L10:/589CE548/594D1721" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L11:/589CE548/594D177B:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L11:/589CE548/594D177B" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L12:/589CE548/594D17DD:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L12:/589CE548/594D17DD" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L13:/589CE548/594D183D:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L13:/589CE548/594D183D" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L14:/589CE548/594D18A4:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L14:/589CE548/594D18A4" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L15:/589CE548/594D190A:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L15:/589CE548/594D190A" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "L16:/589CE548/594D1971:Inductor_SMD:L_0805_2012Metric".
+
+Changing footprint "L16:/589CE548/594D1971" value from "150Ω" to "150".
+
+Info: Checking netlist symbol footprint "P1:/589D87C6/589E4CA3:Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm".
+
+Info: Checking netlist symbol footprint "P2:/589D87C6/5AF4BC3D:Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical".
+
+Changing footprint "P2:/589D87C6/589D89DF" value from "CONN_01X04" to "Conn_01x04".
+
+Info: Changing component path “P2:/589D87C6/589D89DF” to “/589D87C6/5AF4BC3D”.
+
+Info: Checking netlist symbol footprint "Q1:/583C9FB7/594BC4B0:TO_SOT_Packages_SMD:TSOT-23".
+
+Changing footprint "Q1:/583C9FB7/594BC4B0" pad "1" net name from "Net-(D1-Pad2)" to "/Thermocouple_PSU/Supply".
+
+Info: Checking netlist symbol footprint "Q2:/589D5546/589EBCEC:TO_SOT_Packages_THT:TO-126_Vertical".
+
+Info: Checking netlist symbol footprint "R1:/583C9FB7/594BF93F:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R2:/589D5546/589EBC96:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R3:/589D5546/59314B9F:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R4:/589D5546/59314AC7:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R5:/589D5546/59314C06:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R6:/589D87C6/589D89D8:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R7:/589D87C6/589D89CE:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "R8:/589D87C6/589D89B6:Resistors_SMD:R_0805".
+
+Info: Checking netlist symbol footprint "SW1:/589D87C6/59308FE2:Buttons_Switches_THT:SW_PUSH_6mm_h5mm".
+
+Info: Checking netlist symbol footprint "SW2:/589D87C6/5930906F:Buttons_Switches_THT:SW_PUSH_6mm_h5mm".
+
+Info: Checking netlist symbol footprint "U1:/583C9FB7/59525E1F:TO_SOT_Packages_SMD:SOT-223".
+
+Info: Checking netlist symbol footprint "U2:/583C9FB7/594D2B25:TO_SOT_Packages_THT:TO-220_Vertical".
+
+Info: Checking netlist symbol footprint "U3:/589CE548/589CECB5:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U4:/589CE548/589CECBF:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U5:/589CE548/589CECC9:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U6:/589CE548/589CECD3:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U7:/589CE548/589CECDD:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U8:/589CE548/589CECE7:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U9:/589CE548/589CECF1:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U10:/589CE548/589CECFB:Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U11:/589CE548/589D71A8:Housings_DIP:DIP-28_W15.24mm".
+
+Info: Checking netlist symbol footprint "U12:/589D5546/589D6D78:Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight".
+
+Info: Checking netlist symbol footprint "U13:/589D87C6/589E58D9:Housings_DIP:DIP-14_W7.62mm".
+
+Info: Checking netlist symbol footprint "U14:/589D87C6/593091B0:Housings_DIP:DIP-28_W7.62mm".
+
+Info: Checking netlist symbol footprint "U15:/589D87C6/593095B6:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist symbol footprint "XS1:/589D5546/59544647:jp_personal:Conn_uSDcard".
+
+Info: Checking netlist symbol footprint "Y1:/589D87C6/589E8900:Crystals:Crystal_HC49-U_Vertical".
+
+Info: Checking netlist symbol footprint "Y2:/589D87C6/589D897F:Crystals:Crystal_Round_d3.0mm_Vertical".
+
